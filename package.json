@@ -28,6 +28,7 @@
 		"eslint-plugin-oxlint": "^1.66.0",
 		"globals": "14.0.0",
 		"jiti": "2.6.1",
+		"oxfmt": "^0.51.0",
 		"oxlint": "^1.66.0",
 		"rolldown": "^1.0.1",
 		"tslib": "2.4.0",
