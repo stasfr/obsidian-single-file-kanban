@@ -15,20 +15,24 @@
 		"lint:eslint": "eslint .",
 		"lint:eslint:fix": "eslint . --fix --cache",
 		"typecheck": "tsc -noEmit -skipLibCheck",
-		"check-all": "pnpm typecheck && pnpm lint && pnpm lint:eslint && fmt:check && pnpm build"
+		"check-all": "pnpm typecheck && pnpm lint && pnpm lint:eslint && pnpm fmt:check && pnpm build"
 	},
 	"keywords": [],
 	"license": "0-BSD",
 	"devDependencies": {
-		"@eslint/js": "9.30.1",
-		"@types/node": "^16.11.6",
-		"eslint-plugin-obsidianmd": "0.1.9",
+		"@eslint/compat": "^2.1.0",
+		"@eslint/js": "^10.0.1",
+		"@types/node": "^25.9.1",
+		"eslint": "^10.4.0",
+		"eslint-plugin-obsidianmd": "0.3.0",
+		"eslint-plugin-oxlint": "^1.66.0",
 		"globals": "14.0.0",
 		"jiti": "2.6.1",
+		"oxlint": "^1.66.0",
 		"rolldown": "^1.0.1",
 		"tslib": "2.4.0",
-		"typescript": "^5.8.3",
-		"typescript-eslint": "8.35.1"
+		"typescript": "^6.0.3",
+		"typescript-eslint": "8.59.4"
 	},
 	"dependencies": {
 		"obsidian": "latest"
