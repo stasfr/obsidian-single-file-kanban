@@ -8,7 +8,14 @@
 		"dev": "rolldown --config --watch",
 		"build": "tsc -noEmit -skipLibCheck && rolldown --config",
 		"version": "node version-bump.mjs && git add manifest.json versions.json",
-		"lint": "eslint ."
+		"lint": "oxlint",
+		"lint:fix": "oxlint --fix",
+		"fmt": "oxfmt",
+		"fmt:check": "oxfmt --check",
+		"lint:eslint": "eslint .",
+		"lint:eslint:fix": "eslint . --fix --cache",
+		"typecheck": "tsc -noEmit -skipLibCheck",
+		"check-all": "pnpm typecheck && pnpm lint && pnpm lint:eslint && fmt:check && pnpm build"
 	},
 	"keywords": [],
 	"license": "0-BSD",
